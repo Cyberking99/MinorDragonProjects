@@ -1,0 +1,29 @@
+select "std"
+
+showln "=========================="
+showln "# Number guessing game s #"
+showln "=========================="
+number = rand(from = 1, to = 9)
+chances = 0
+
+showln "Guess a number between 1 and 9:"
+
+while chances < 5 {
+    guess = readln()
+    if guess == number{
+        showln "Congrats!!! Your guess is right."
+        break
+        }
+    else if guess < number {
+        showln "Oops! Wrong guess\nNumber is low.\nGuess a number higher than " + guess
+    }
+    else{
+        showln "Oops! Wrong guesss\nNumber is high.\nGuess a number lower than " + guess
+    }
+    
+    chances += 1
+}
+
+if chances > 5 {
+    showln "You lose.\nChances exhausted"
+}
