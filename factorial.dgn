@@ -1,0 +1,19 @@
+select "std"
+
+showln "+++++++++++++\n# FACTORIAL #\n+++++++++++++\n"
+showln "Enter the Number: "
+n = readln()
+
+num = parseInt(n)
+
+fact = 1
+
+if num < 0 {
+    showln("\nFactorial of negative number is not defined")
+}
+else{
+    for i : range(1,num+1){
+        fact *= i
+    }
+    showln("\nFactorial of "+num+" is "+fact)
+}
