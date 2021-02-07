@@ -1,0 +1,22 @@
+/*
+*************************************************************************
+| Author      :	Kefas Kingsley						|
+| Description : Program to find the area of a circle given the radius	|
+|			Formular used A=πr²				|
+| Date        :	01/02/2021						|
+*************************************************************************
+*/
+
+// import module
+select "std"
+select "types"
+select "math"
+
+// Accept input for the value of the radius (r)
+radius = readln()
+
+// Declare the formular for finding the area
+area = PI * pow(radius,2)
+
+// Output the area
+showln("The area of the circle with radius " + float(radius) + " is " + float(area))
